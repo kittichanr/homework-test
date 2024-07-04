@@ -23,7 +23,7 @@ function App(): React.JSX.Element {
           />
           <Stack.Screen name="Quiz" component={Quiz} />
           <Stack.Screen
-            options={{headerShown: false}}
+            options={{headerShown: false, gestureEnabled: false}}
             name="LeaderBoard"
             component={LeaderBoard}
           />

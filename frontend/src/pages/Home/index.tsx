@@ -21,7 +21,7 @@ const Home = () => {
         value={name}
         onChangeText={text => setName(text)}
       />
-      <Button title="Enter" onPress={gotoQuiz} />
+      <Button title="Enter" onPress={gotoQuiz} disabled={name.length < 1} />
     </SafeAreaView>
   );
 };
