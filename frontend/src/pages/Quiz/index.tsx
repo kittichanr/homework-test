@@ -96,11 +96,21 @@ const Quiz = () => {
                   <Text>{item.choices[1]}</Text>
                 </View>
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                  <RadioButton.Android value={item.choices[2]} />
+                  <RadioButton.Android
+                    value={item.choices[2]}
+                    status={
+                      item.choices[2] == answer[index] ? 'checked' : 'unchecked'
+                    }
+                  />
                   <Text>{item.choices[2]}</Text>
                 </View>
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                  <RadioButton.Android value={item.choices[3]} />
+                  <RadioButton.Android
+                    value={item.choices[3]}
+                    status={
+                      item.choices[3] == answer[index] ? 'checked' : 'unchecked'
+                    }
+                  />
                   <Text>{item.choices[3]}</Text>
                 </View>
               </RadioButton.Group>
